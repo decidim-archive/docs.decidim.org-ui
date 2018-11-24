@@ -145,6 +145,8 @@ body {
 .navbar-item__brand-wrapper {
   align-items: baseline !important;
   margin-top: 0.25rem;
+  text-transform: lowercase;
+  font-weight: 600;
 }
 
 .navbar-item__logo {

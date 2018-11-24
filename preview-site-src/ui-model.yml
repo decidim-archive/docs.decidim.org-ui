@@ -1,7 +1,7 @@
 antoraVersion: '1.0.0'
 site:
   url: http://localhost:5252
-  title: Decidim Docs
+  title: decidim docs
   components:
     - name: abc
       title: Project ABC
