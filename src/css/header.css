@@ -259,6 +259,7 @@ body {
   }
 
   .navbar-end {
+    display: none !important;
     justify-content: flex-end;
     margin-left: auto;
   }
