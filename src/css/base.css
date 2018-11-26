@@ -1,6 +1,6 @@
 :root {
   --color-text: #222;
-  --color-navbar-bg: #0a0a0a;
+  --color-navbar-bg: #f33;
   --color-navbar-bg-focus: #000;
   --color-navbar-text: #fff;
 }
@@ -18,9 +18,13 @@ body {
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 1.1em;
   text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -46,7 +50,7 @@ a:hover {
 code,
 kbd,
 pre {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 b,

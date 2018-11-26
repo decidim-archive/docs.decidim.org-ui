@@ -138,6 +138,25 @@ body {
 
 .navbar-item {
   flex: none;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.navbar-item__brand-wrapper {
+  align-items: baseline !important;
+  margin-top: 0.25rem;
+  text-transform: lowercase;
+  font-weight: 600;
+}
+
+.navbar-item__logo {
+  max-width: 2rem;
+  margin-right: 0.3rem;
+  flex-shrink: 0;
+}
+
+.navbar-item__name {
+  vertical-align: bottom;
 }
 
 .navbar-item.has-dropdown {
@@ -223,7 +242,7 @@ body {
   .navbar-link::after {
     border-width: 0 0 1px 1px;
     border-style: solid;
-    content: " ";
+    content: ' ';
     display: block;
     height: 0.5em;
     pointer-events: none;
@@ -278,10 +297,12 @@ body {
   display: inline-flex;
   align-items: center;
   background-color: #fff;
-  border: 1px solid #e1e1e1;
-  border-radius: 0.15rem;
+  border: 0;
+  border-radius: 0;
   height: 1.75rem;
-  color: #333;
+  color: #f33;
+  font-weight: 600;
+  text-transform: lowercase;
   padding: 0 0.75em;
   white-space: nowrap;
 }
