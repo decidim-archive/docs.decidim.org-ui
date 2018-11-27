@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "8"
+before_script:
+  - npm install -g gulp-cli
+script: gulp pack
+deploy:
+  provider: releases
+  api_key: $GITHUB_API_KEY
+  file:
+    - build/ui-bundle.zip
+  skip_cleanup: true
+  on:
+    repo: $TRAVIS_REPO_SLUG
+    tags: true
+  overwrite: true
