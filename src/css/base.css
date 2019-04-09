@@ -1,5 +1,8 @@
 :root {
-  --color-text: #222;
+  --color-primary: #f33;
+  --color-secondary: #190000;
+  --color-text: #221F20;
+  --color-text-inverse: #fff;
   --color-navbar-bg: #f33;
   --color-navbar-bg-focus: #000;
   --color-navbar-text: #fff;

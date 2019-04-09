@@ -1,11 +1,11 @@
 <div class="toolbar" role="navigation">
   <button class="navigation-toggle"></button>
   {{#if site.homeUrl}}
-    <a href="/init/{{page.version}}/index.html" class="home-link{{#if page.home}} is-current{{/if}}"></a>
+  <a href="/init/{{page.version}}/index.html" class="home-link{{#if page.home}} is-current{{/if}}"></a>
   {{/if}}
   {{> breadcrumbs}}
-  {{> page-versions}}
+  {{!-- {{> page-versions}} --}}
   {{#if page.editUrl}}
-    <div class="edit-this-page"><a href="{{page.editUrl}}">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="{{page.editUrl}}">Edit this Page</a></div>
   {{/if}}
 </div>

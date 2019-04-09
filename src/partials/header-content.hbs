@@ -1,28 +1,31 @@
 {{#if page.attributes.debug}}
-  <div class="debug-row">
-    <div id="debug-left" class="debug-column"></div>
-    <div id="debug-right" class="debug-column"></div>
-  </div>
-  <div id="dest"></div>
-  <script type="text/javascript" src="{{uiRootPath}}/js/vendor/renderjson.js"></script>
-  <script>
-   document.getElementById("debug-left").appendChild(
-     renderjson.set_show_to_level(1).set_max_string_length(80)({{{stringify page}}})
-   )
-   document.getElementById("debug-right").appendChild(
-     renderjson.set_show_to_level(1).set_max_string_length(80)({{{stringify site}}})
-   )
-  </script>
+<div class="debug-row">
+  <div id="debug-left" class="debug-column"></div>
+  <div id="debug-right" class="debug-column"></div>
+</div>
+<div id="dest"></div>
+<script type="text/javascript" src="{{uiRootPath}}/js/vendor/renderjson.js"></script>
+<script>
+  document.getElementById("debug-left").appendChild(
+    renderjson.set_show_to_level(1).set_max_string_length(80)({{{ stringify page }}})
+  )
+  document.getElementById("debug-right").appendChild(
+    renderjson.set_show_to_level(1).set_max_string_length(80)({{{ stringify site }}})
+  )
+</script>
 {{/if}}
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item navbar-item__brand-wrapper" href="{{site.url}}">
-        <img class="navbar-item__logo" src="{{uiRootPath}}/img/decidim-logo-topbar.svg" alt="Decidim">
-        <span class="navbar-item__name">
+      <div class="navbar-item__brand-wrapper">
+        <a class="navbar-item__brand" href="http://decidim.org">
+          <img class="navbar-item__logo" src="{{uiRootPath}}/img/decidim-logo-topbar.svg" alt="Decidim">
+        </a>
+        <a class="navbar-item__name" href="{{site.url}}">
           {{site.title}}
-        </span>
-      </a>
+        </a>
+      </div>
+      {{> page-versions}}
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
