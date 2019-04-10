@@ -1,6 +1,7 @@
 :root {
   --color-primary: #f33;
   --color-secondary: #190000;
+  --color-primary-dark: #E52D2E;
   --color-text: #221F20;
   --color-text-inverse: #fff;
   --color-navbar-bg: #f33;
@@ -37,17 +38,20 @@ img {
 }
 
 body {
+  background-color: #f9f9f9; 
   color: var(--color-text);
   line-height: 1.6;
   margin: 0;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 a:hover {
-  text-decoration: underline;
+  filter: brightness(180%);
 }
 
 code,
