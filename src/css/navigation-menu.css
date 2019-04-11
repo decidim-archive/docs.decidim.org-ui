@@ -44,8 +44,10 @@ html.is-clipped--nav {
 .nav-menu h3.title {
   margin: 0;
   font-weight: 600;
-  color: #424242;
-  font-size: 1em;
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  text-transform: lowercase;
   padding: 0.25em 0 0.125em;
 }
 
@@ -55,7 +57,7 @@ html.is-clipped--nav {
 }
 
 .nav-list {
-  margin: 0 0 0 0.8em;
+  margin: 0;
   padding: 0;
 }
 
@@ -66,6 +68,11 @@ html.is-clipped--nav {
 .nav-item {
   list-style: none;
   margin-top: 0.5em;
+}
+
+.nav-item.is-active.is-current-page {
+  border-left: 5px solid var(--color-primary);
+  padding-left: 0.25rem;
 }
 
 /* adds some breathing room below a nested list */

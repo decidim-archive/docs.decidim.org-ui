@@ -34,11 +34,11 @@
 }
 
 .navigation {
-  background-color: #fff;
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
   position: relative;
   top: var(--toolbar-height);
   height: calc(100vh - var(--navbar-height) - var(--toolbar-height));
-  border-right: 1px solid rgba(0,0,0,.1);
 }
 
 @media screen and (min-width: 769px) {
