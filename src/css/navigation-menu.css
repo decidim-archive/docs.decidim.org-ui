@@ -99,7 +99,7 @@ html.is-clipped--nav {
   position: absolute;
   height: 1.4em; /* NOTE must match line-height of text; slightly tweaked for alignment */
   width: 1.5em;
-  margin-left: .5em;
+  margin-left: 0.5em;
   margin-top: 3px;
 }
 
