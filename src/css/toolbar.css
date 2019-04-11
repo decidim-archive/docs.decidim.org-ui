@@ -45,16 +45,21 @@
 }
 
 .navigation-toggle {
-  background: url(../img/menu.svg) no-repeat 50% 47.5%;
-  background-size: 49%;
+  background: var(--color-primary) url(../img/menu.svg) no-repeat 50% 47.5%;
+  background-size: 55%;
   border: none;
   outline: none;
   cursor: pointer;
   display: block;
-  height: 2.5rem;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px rgba(0,0,0,.16), 0 3px 16px rgba(0,0,0,.23);
+  height: 2.25rem;
   padding: 0;
-  width: 2.5rem;
+  width: 2.25rem;
   margin-right: -0.25rem;
+  z-index: 2;
+  position: relative;
+  top: 1rem;
 }
 
 .navigation-toggle::-moz-focus-inner {
@@ -69,7 +74,7 @@
 
 .navigation-toggle.is-active {
   background-image: url(../img/back.svg);
-  background-size: 41.5%;
+  background-size: 56.5%;
 }
 
 .home-link {
