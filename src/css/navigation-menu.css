@@ -71,7 +71,7 @@ html.is-clipped--nav {
 }
 
 .nav-item.is-active.is-current-page {
-  border-left: 5px solid var(--color-primary);
+  border-left: 3px solid var(--color-primary);
   padding-left: 0.25rem;
 }
 
@@ -99,7 +99,8 @@ html.is-clipped--nav {
   position: absolute;
   height: 1.4em; /* NOTE must match line-height of text; slightly tweaked for alignment */
   width: 1.5em;
-  margin-left: -1.5em;
+  margin-left: .5em;
+  margin-top: 3px;
 }
 
 .nav-toggle::-moz-focus-inner {
