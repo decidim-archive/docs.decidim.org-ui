@@ -127,11 +127,13 @@
 
 .doc a,
 .doc a:visited {
-  color: #1565c0;
+  color: inherit;
+  border-bottom: 1px dotted var(--color-primary);
 }
 
 .doc a:hover {
-  color: #104d92;
+  color: var(--color-primary);
+  filter: none;
 }
 
 .doc i.fa {
@@ -225,6 +227,8 @@
 
 .doc .admonitionblock {
   margin: 1.4rem 0 0;
+  background-color: var(--color-bg);
+  border-left: 8px solid;
 }
 
 .doc .admonitionblock p,
@@ -248,44 +252,39 @@
 }
 
 .doc .admonitionblock td.content {
-  padding: 1rem 1rem 0.75rem;
-  background-color: #fafafa;
+  padding: 1.75rem 1rem 0.75rem;
   width: 100%;
 }
 
 .doc .admonitionblock .icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0.5rem;
+  left: 1rem;
   font-size: 0.75rem;
-  padding: 0 0.5rem;
   height: 1.25rem;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  border-radius: 0.45rem;
-  color: #fff;
-  transform: translate(-0.5rem, -50%);
 }
 
-.doc .admonitionblock.caution .icon {
-  background-color: #a0439c;
+.doc .admonitionblock.caution {
+  border-left-color: #a0439c;
 }
 
-.doc .admonitionblock.important .icon {
-  background-color: #d32f2f;
+.doc .admonitionblock.important  {
+  border-left-color: #d32f2f;
 }
 
-.doc .admonitionblock.note .icon {
-  background-color: #217ee7;
+.doc .admonitionblock.note {
+  border-left-color: #217ee7;
 }
 
-.doc .admonitionblock.tip .icon {
-  background-color: #41af46;
+.doc .admonitionblock.tip {
+  border-left-color: #41af46;
 }
 
-.doc .admonitionblock.warning .icon {
-  background-color: #e18114;
+.doc .admonitionblock.warning {
+  border-left-color: #e18114;
 }
 
 .doc .admonitionblock .icon i {
@@ -299,21 +298,30 @@
   hyphens: none;
 }
 
-.doc .imageblock {
+.doc .imageblock,
+.doc .videoblock {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2rem;
+  background: var(--color-bg);
+  padding: 5px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.1);
 }
 
 .doc .imageblock img {
   display: block;
 }
 
-.doc .imageblock .title {
-  /* color: #4a4a4a; */
-  color: #191919;
+.doc .imageblock .title,
+.doc .videoblock .title {
+  align-self: flex-start;
+  order: 1;
+  color: inherit;
   font-style: italic;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .doc .imageblock img,
@@ -340,7 +348,7 @@
 }
 
 .doc p {
-  font-size: 0.95rem;
+  /* font-size: 0.95rem; */
   margin: 0;
 }
 
@@ -359,8 +367,8 @@
 */
 
 #preamble .abstract blockquote {
-  background-color: #f0f0f0;
-  border-left: 5px solid #ddd;
+  background-color: var(--color-primary-light);
+  border-left: 5px solid var(--color-primary);
   color: #4a4a4a;
   font-size: 0.9em;
   margin: 0;
@@ -456,7 +464,7 @@
 }
 
 .doc .sidebarblock {
-  background-color: #ffebec;
+  background-color: var(--color-primary-light);
   padding: 0.75rem 1.5rem;
 }
 

@@ -147,10 +147,6 @@ body {
   flex-grow: 1;
 }
 
-.navbar-item__brand-wrapper a {
-  transition: 0.3s;
-}
-
 .navbar-item__brand-wrapper a:hover {
   opacity: 0.85;
 }

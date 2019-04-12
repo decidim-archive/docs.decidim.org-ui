@@ -30,8 +30,13 @@ a + .crumbs {
 }
 
 .crumbs li::after {
-  content: "/";
-  padding: 0 0.5rem;
+  content: "";
+    padding: 0 .5rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/chevron-right.svg) no-repeat 50%;
+    background-size: .25rem;
+    vertical-align: -.075em;
 }
 
 .crumbs li:last-of-type::after {

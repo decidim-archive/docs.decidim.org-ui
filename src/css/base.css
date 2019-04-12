@@ -2,6 +2,8 @@
   --color-primary: #f33;
   --color-secondary: #190000;
   --color-primary-dark: #e52d2e;
+  --color-primary-light: #ffebec;
+  --color-bg: #f9f9f9;
   --color-text: #221f20;
   --color-text-inverse: #fff;
   --color-navbar-bg: #f33;
@@ -38,7 +40,7 @@ img {
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   margin: 0;
