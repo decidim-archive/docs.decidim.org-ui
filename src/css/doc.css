@@ -271,7 +271,7 @@
   border-left-color: #a0439c;
 }
 
-.doc .admonitionblock.important  {
+.doc .admonitionblock.important {
   border-left-color: #d32f2f;
 }
 
@@ -306,7 +306,7 @@
   margin: 2rem;
   background: var(--color-bg);
   padding: 5px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .doc .imageblock img {
