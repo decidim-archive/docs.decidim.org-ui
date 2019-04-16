@@ -12,28 +12,64 @@
 
 .landing .doc {
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   box-shadow: none;
 }
 
 .landing .doc h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+  line-height: 1;
   letter-spacing: -0.05em;
   word-spacing: 0.1em;
-  margin-bottom: 0;
+  margin-bottom: 0.15em;
+}
+
+@media (min-width: 600px) {
+  .landing .doc h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing .doc h1 {
+    font-size: 4rem;
+  }
 }
 
 .landing #preamble .sectionbody .paragraph {
-  font-size: 1.1rem;
   line-height: 1.4;
 }
 
+@media (min-width: 600px) {
+  .landing #preamble .sectionbody .paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing #preamble .sectionbody .paragraph {
+    font-size: 1.1rem;
+  }
+}
+
 .landing #preamble .sectionbody .paragraph:first-child {
-  margin-top: -0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: lowercase;
   color: var(--color-primary);
+}
+
+@media (min-width: 600px) {
+  .landing #preamble .sectionbody .paragraph:first-child {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing #preamble .sectionbody .paragraph:first-child {
+    margin-top: -0.5rem;
+    font-size: 1.7rem;
+  }
 }
 
 .landing .doc h2 {
@@ -54,6 +90,7 @@
 .landing .project-docs-list > .content,
 .landing .software-docs-list > .content {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -63,14 +100,35 @@
   border-top: 0;
   background-color: var(--color-primary);
   color: #fff;
-  width: calc(33.33% - 10px);
-  margin: 0 15px 0 0;
+  width: 100%;
+  margin: 0 0 15px;
   padding: 1.5rem;
 }
 
-.landing .project-docs-list .sidebarblock:last-child,
-.landing .software-docs-list .sidebarblock:last-child {
-  margin-right: 0;
+@media (min-width: 600px) and (max-width: 999px) {
+  .landing .project-docs-list .sidebarblock,
+  .landing .software-docs-list .sidebarblock {
+    width: calc(50% - 10px);
+    margin: 0 20px 15px 0;
+  }
+
+  .landing .project-docs-list .sidebarblock:nth-child(2),
+  .landing .software-docs-list .sidebarblock:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing .project-docs-list .sidebarblock,
+  .landing .software-docs-list .sidebarblock {
+    width: calc(33.33% - 10px);
+    margin: 0 15px 15px 0;
+  }
+
+  .landing .project-docs-list .sidebarblock:last-child,
+  .landing .software-docs-list .sidebarblock:last-child {
+    margin-right: 0;
+  }
 }
 
 .landing .project-docs-list .paragraph,
