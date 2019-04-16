@@ -157,7 +157,7 @@ body {
   justify-content: center;
   padding-left: 0.75rem;
   padding-right: 0.25rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .navbar-item__logo {
