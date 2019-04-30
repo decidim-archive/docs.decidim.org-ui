@@ -93,7 +93,6 @@
 
 .edit-this-page {
   display: none;
-  padding-right: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -103,5 +102,10 @@
 }
 
 .toolbar .edit-this-page a {
-  color: #8e8e8e;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.toolbar .edit-this-page a:hover {
+  color: var(--color-primary);
+  filter: none;
 }
