@@ -1,30 +1,32 @@
 .page-versions {
-  display: none;
-  margin-right: 0.7rem;
+  /* display: none; */
+  /* margin-right: 0.7rem; */
   position: relative;
+  display: flex;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .page-versions {
     display: block;
   }
-}
+} */
 
 .page-versions.is-active {
   color: #333;
 }
 
 .page-versions .versions-menu-toggle {
-  color: inherit;
+  color: var(--color-text-inverse);
+  text-transform: lowercase;
   font-family: inherit;
   font-size: inherit;
   background: url(../img/chevron.svg) no-repeat;
-  background-position: right 0.5rem top 50%;
-  background-size: auto 0.75em;
+  background-position: right top 53%;
+  background-size: auto 0.5em;
   border: 1px solid transparent;
   outline: none;
   cursor: pointer;
-  padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.5rem;
   position: relative;
   z-index: 1;
 }
@@ -35,12 +37,16 @@
 
 .page-versions .versions-menu {
   border: 1px solid transparent;
-  background-color: #f0f0f0;
-  padding: 1.3rem 0.5rem 0.35rem;
+  background-color: #fff;
+  padding: 0.35rem 0.5rem;
   position: absolute;
-  top: 0;
+  top: 2.5rem;
   left: 0;
   width: 100%;
+  color: var(--color-primary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 1px;
+  text-transform: lowercase;
 }
 
 .page-versions:not(.is-active) .versions-menu {
@@ -50,7 +56,11 @@
 .page-versions .version {
   display: block;
   line-height: 1;
-  padding-top: 0.6em;
+  padding: 0.2em 0;
+}
+
+.page-versions .version:hover {
+  filter: brightness(180%);
 }
 
 .page-versions .version.is-current {

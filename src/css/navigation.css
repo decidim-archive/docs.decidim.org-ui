@@ -34,7 +34,8 @@
 }
 
 .navigation {
-  background-color: #fafafa;
+  background-color: var(--color-secondary);
+  color: var(--color-text-inverse);
   position: relative;
   top: var(--toolbar-height);
   height: calc(100vh - var(--navbar-height) - var(--toolbar-height));

@@ -1,5 +1,11 @@
 :root {
-  --color-text: #222;
+  --color-primary: #f33;
+  --color-secondary: #190000;
+  --color-primary-dark: #e52d2e;
+  --color-primary-light: #ffebec;
+  --color-bg: #f9f9f9;
+  --color-text: #221f20;
+  --color-text-inverse: #fff;
   --color-navbar-bg: #f33;
   --color-navbar-bg-focus: #000;
   --color-navbar-text: #fff;
@@ -34,17 +40,20 @@ img {
 }
 
 body {
+  background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   margin: 0;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 a:hover {
-  text-decoration: underline;
+  filter: brightness(180%);
 }
 
 code,
