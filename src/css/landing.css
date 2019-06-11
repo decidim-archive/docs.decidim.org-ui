@@ -158,3 +158,10 @@
 .landing .software-docs-list .sidebarblock a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.landing .pdf-download {
+  font-size: 90%;
+  font-weight: 600;
+  background: url(../img/pdf.svg) no-repeat left top;
+  padding-left: 1.5rem;
+}
